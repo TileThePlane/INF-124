@@ -22,6 +22,11 @@
 
 }
 
+.navBarButton{
+	float: left;
+	padding: 5px;
+}
+
 body{
 	/*light brownish color*/
 	background-color: #FFFFCC;
