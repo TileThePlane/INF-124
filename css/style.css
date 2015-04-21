@@ -35,7 +35,7 @@ body{
 	margin-right: auto;
 	
 	/*socks at bottom*/
-	background-image: url("http://giantnortheast.com/wp-content/uploads/2014/03/socks.jpg");
+	background-image: url("../images/socks.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
