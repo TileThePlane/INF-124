@@ -1,7 +1,7 @@
 #container{
 	/*light redish color*/
 	background-color: #FFCCCC;
-	
+
 }
 
 #footer{
@@ -15,26 +15,27 @@
 	height:100px;
 }
 
-#navWrapper{
-	position: relative;
-	float: left;
-	height:100%;
-	width:50%;
-}
-
 #navBar{
-	position: absolute;
-	bottom:12;
-	left:0;
+	background-color: green;
+	float:left;
+	width:71.5%;
+	height:70px;
+	text-align:center;
+	font:
 }
-
-.navBarButton{
-	float: left;
-	padding: 5px;
+#navBar a{
+	padding-left:55px;
+	padding-right:55px;
+	border-left: thin solid #000000;
+}
+#navBar .edge{
+	border:none;
 }
 
 #logo{
-	float: left;
+	background-color: yellow;
+	float:left;
+	width:28.5%;
 }
 
 .content{
@@ -44,12 +45,12 @@ clear:both;
 
 
 body{
-	
+
 	background-color: white;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 	/*socks at bottom*/
 	background-image: url("../images/socks.png");
 	background-repeat: no-repeat;
