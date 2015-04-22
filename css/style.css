@@ -21,12 +21,16 @@
 	width:71.5%;
 	height:70px;
 	text-align:center;
-	font:
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
 }
 #navBar a{
-	padding-left:55px;
-	padding-right:55px;
+	padding-left:40px;
+	padding-right:40px;
 	border-left: thin solid #000000;
+	text-decoration: none !important;
+	color: #000000;
 }
 #navBar .edge{
 	border:none;
