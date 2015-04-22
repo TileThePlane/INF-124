@@ -57,6 +57,7 @@ body{
 	background-image: url("../images/socks.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
+	background-attachment: fixed;
 }
 
 h1{
