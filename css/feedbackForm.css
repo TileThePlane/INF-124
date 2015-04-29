@@ -1,0 +1,22 @@
+form  { 
+	display: table;
+	width: 500px;
+}
+p.tablerow{ 
+	display: table-row;  
+}
+label { 
+	display: table-cell;
+	text-align: right;
+}
+input { 
+	display: table-cell;
+}
+
+textarea {
+	display: table-cell;
+}
+
+button{
+	display: table-cell;
+}

@@ -3,6 +3,7 @@
 <head>
 <title>Sock Exchange</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/feedbackForm.css"/>
 </head>
 <body>
 <div id = container>
@@ -18,16 +19,13 @@
   </div>
  </div>
   <div class = content>
-    <h1>Welcome to Sock Exchange!  </h1>
-	  <p>Sock Exchange is a small company dedicated to providing socks of all kinds.<br>
-	     Some of our anticipated features include:</p>
-	  <ul>
-		  <li>Selling Socks</li>
-		  <li>Buying Socks</li>
-	  	<li>Sharing/Exchanging Socks</li>
-	  	<li>Sock Discussions</li>
-	  	<li>And much more!</li>
-  	</ul>
+    <h1>Feedback Form  </h1>
+	  <p>In order to give you the best possible service, we ask that you give us feedback on your order:</p>
+		<form>
+		<p class="tablerow"><label>Name:</label><input id="name" type="text"></p>
+		<p class="tablerow"><label>Comments?</label><textarea id="Comments" rows="10" cols="30"></textarea></p>
+		<p class="tablerow"><button type="button" onclick="alert('Successfully submitted your feedback!')">Submit Form</button><button type="reset">Reset</button></p>
+		</form>
   </div>
   <div id = "footer">
     2015 Sock Exchange Inc.
