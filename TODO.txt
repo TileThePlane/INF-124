@@ -1,0 +1,4 @@
+-Restructure Website to use Server Side Includes
+-Meet Milestone 2:
+	2 Javascript Forms
+	
