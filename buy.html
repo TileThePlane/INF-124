@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id = container>
-<div id = topbar>
+  <div id = topbar>
     <div id ="logo">
         <img src = "images/SockExchangePro.png" alt = "Sock Exchange Logo" height=70 width=300 />
     </div>
@@ -17,13 +17,24 @@
     </div>
   </div>
  </div>
-  <div class = content>
-    <h1>A Place for the sock enthusiast to buy socks</h1>
-    <p> This is a paragraph.   </p>
-  </div>
-  <div id = "footer">
-  2015 Sock Exchange Inc.
-  </div>
+ <div class = content>
+    <form id = "sockQuote" action="form_action.asp">
+      How many socks do you need to purchase(in tonnes)<input type="number" name="sockQuantity" min="1" max="999"/>
+      What color must these socks be <input type="color" name='sockColor'/>
+      Please select from one of our sock patterns <select name='sockPattern' onChange=""/>
+                                                    <option value="argyle">Argyle</option>
+                                                    <option value="checkered">Checkered</option>
+                                                    <option value="striped">Striped</option>
+                                                    <option value="solid">Solid</option>
+                                                    <option value="alpaca">Alpaca Print</option>
+                                                  </select>
+    </form>
+    <button onclick="printQuote()">Get Sock Quote<button/>
+      <p id="demo"></p>
+ </div>
+ <div id = "footer">
+   2015 Sock Exchange Inc.
+ </div>
 </div>
 </body>
 </html>
