@@ -3,7 +3,6 @@
 <head>
 <title>Sock Exchange</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script type="text/javascript" src="scripts/sockQuote.js"></script>
 </head>
 <body>
 <div id = container>
@@ -19,9 +18,9 @@
   </div>
  </div>
  <div class = content>
-    <form id = "sockQuote">
-      How many socks do you need to purchase(in tonnes)<input type="number" name="sockQuantity" min="1" max="999"/><br/>
-      What color must these socks be <input type="color" name='sockColor'/><br/>
+    <form id = "sockQuote" action="form_action.asp">
+      How many socks do you need to purchase(in tonnes)<input type="number" name="sockQuantity" min="1" max="999"/>
+      What color must these socks be <input type="color" name='sockColor'/>
       Please select from one of our sock patterns <select name='sockPattern' onChange=""/>
                                                     <option value="argyle">Argyle</option>
                                                     <option value="checkered">Checkered</option>
@@ -29,9 +28,9 @@
                                                     <option value="solid">Solid</option>
                                                     <option value="alpaca">Alpaca Print</option>
                                                   </select>
-      <input type="button" value="Get Sock Quote" onclick='printQuote()'/>
     </form>
-      <p id="printSockQuote"></p>
+    <button onclick="printQuote()">Get Sock Quote<button/>
+      <p id="demo"></p>
  </div>
  <div id = "footer">
    2015 Sock Exchange Inc.
