@@ -1,0 +1,15 @@
+fieldset{
+  float:left;
+}
+
+.inputBit{
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.printSockQuote{
+  padding-top:50px;
+  font-size: 30px;
+	font-weight: bold;
+  color:#64EDCD;
+}

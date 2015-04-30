@@ -4,12 +4,13 @@
 <head>
   <title>Sock Exchange</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/buy.css" />
   <script type="text/javascript" src="scripts/sockQuote.js"></script>
 </head>
 
 <body>
-  <div id=c ontainer>
-    <div id=t opbar>
+  <div id="container" style="padding-bottom:350">
+    <div id="topbar">
       <div id="logo">
         <img src="images/SockExchangePro.png" alt="Sock Exchange Logo" height=70 width=300 />
       </div>
@@ -20,27 +21,39 @@
         </div>
       </div>
     </div>
-    <div class=c ontent>
+    <div class="content">
       <form id="sockQuote">
-        How many socks do you need to purchase(in tonnes)
-        <input type="number" name="sockQuantity" min="1" max="999" />
-        <br/> What color must these socks be
-        <input type="color" name='sockColor' />
-        <br/> Please select from one of our sock patterns
-        <select name='sockPattern' onChange="" />
-        <option value="argyle">Argyle</option>
-        <option value="checkered">Checkered</option>
-        <option value="striped">Striped</option>
-        <option value="solid">Solid</option>
-        <option value="alpaca">Alpaca Print</option>
-        </select>
-        <br/>
-        <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
+        <fieldset>
+          <legend>Sock Quoter</legend>
+          <div class="inputBit">
+          <label for="sockQuantity">How many socks do you need to purchase(in tonnes)</label>
+          <input type="number" id="sockQuantity" name="sockQuantity" min="1" max="999" />
+          </div>
+          <div class="inputBit">
+          <label for="sockColor">What color must these socks be</label>
+          <input type="color" id="sockColor"name='sockColor' />
+          </div>
+          <div class="inputBit">
+          <label for="sockPattern">Please select from one of our sock patterns</label>
+          <select name='sockPattern' id="sockPattern" onChange="" />
+            <option value="argyle">Argyle</option>
+            <option value="checkered">Checkered</option>
+            <option value="striped">Striped</option>
+            <option value="solid">Solid</option>
+            <option value="alpaca">Alpaca Print</option>
+          </select>
+          </div>
+          <div class="inputBit">
+          <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
+          </div>
+          <div id="printSockQuote"></div>
+        </fieldset>
       </form>
-      <p><div id="printSockQuote"/></p>
     </div>
-    <div id="footer">
-      2015 Sock Exchange Inc.
+  </div>
+  <div id="footer">
+    <div class="wrapFooter">
+      <p>2015 Sock Exchange Inc.</p>
     </div>
   </div>
 </body>
