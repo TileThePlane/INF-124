@@ -1,40 +1,48 @@
 <!-- buy.html -->
 <html>
+
 <head>
-<title>Sock Exchange</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <title>Sock Exchange</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="scripts/sockQuote.js"></script>
 </head>
+
 <body>
-<div id = container>
-  <div id = topbar>
-    <div id ="logo">
-        <img src = "images/SockExchangePro.png" alt = "Sock Exchange Logo" height=70 width=300 />
+  <div id=c ontainer>
+    <div id=t opbar>
+      <div id="logo">
+        <img src="images/SockExchangePro.png" alt="Sock Exchange Logo" height=70 width=300 />
+      </div>
+      <div id="navBar">
+        <div class="wrapper" style="clear: both; padding-top: 17px;">
+          <!--change class for each <a> to nested element-->
+          <a class="edge" href="index.html">Home</a><a href="buy.html">Buy</a><a href="sell.html">Sell</a><a href="trade.html">Trade</a><a href="about.html">About</a>
+        </div>
+      </div>
     </div>
-    <div id ="navBar">
-    <div class="wrapper" style="clear: both; padding-top: 17px;">
-        <!--change class for each <a> to nested element-->
-        <a class="edge" href="index.html">Home</a><a href="buy.html">Buy</a><a href="sell.html">Sell</a><a href="trade.html">Trade</a><a href="about.html">About</a>
+    <div class=c ontent>
+      <form id="sockQuote">
+        How many socks do you need to purchase(in tonnes)
+        <input type="number" name="sockQuantity" min="1" max="999" />
+        <br/> What color must these socks be
+        <input type="color" name='sockColor' />
+        <br/> Please select from one of our sock patterns
+        <select name='sockPattern' onChange="" />
+        <option value="argyle">Argyle</option>
+        <option value="checkered">Checkered</option>
+        <option value="striped">Striped</option>
+        <option value="solid">Solid</option>
+        <option value="alpaca">Alpaca Print</option>
+        </select>
+        <br/>
+        <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
+      </form>
+      <p><div id="printSockQuote"/></p>
+    </div>
+    <div id="footer">
+      2015 Sock Exchange Inc.
     </div>
   </div>
- </div>
- <div class = content>
-    <form id = "sockQuote" action="form_action.asp">
-      How many socks do you need to purchase(in tonnes)<input type="number" name="sockQuantity" min="1" max="999"/>
-      What color must these socks be <input type="color" name='sockColor'/>
-      Please select from one of our sock patterns <select name='sockPattern' onChange=""/>
-                                                    <option value="argyle">Argyle</option>
-                                                    <option value="checkered">Checkered</option>
-                                                    <option value="striped">Striped</option>
-                                                    <option value="solid">Solid</option>
-                                                    <option value="alpaca">Alpaca Print</option>
-                                                  </select>
-    </form>
-    <button onclick="printQuote()">Get Sock Quote<button/>
-      <p id="demo"></p>
- </div>
- <div id = "footer">
-   2015 Sock Exchange Inc.
- </div>
-</div>
 </body>
+
 </html>
