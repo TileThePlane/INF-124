@@ -8,12 +8,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/buy.css" />
   <script type="text/javascript" src="scripts/sockQuote.js"></script>
+  <script type="text/javascript" src="scripts/rotatingSockImages.js"></script>
 </head>
 
-<body>
-  <div id="container" style="padding-bottom:350">
+<body onLoad='getRotatingSockImages()'>
+  <div class="container" style="padding-bottom:350">
     <!--#include virtual="common/navBar.html"-->
-    <div class="content"  onLoad='getRotatingSockImages()'>
+    <div class="content">
       <div id="imageHolder">
         <img id="placeHolder" src"" alt="Sock Offerings"
           width="500px" height="600px" />
@@ -43,7 +44,7 @@
         </div><!--div class="inputBit"-->
           <div class="inputBit">
           <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
-        </div><!--div class="inputBit"-->"
+        </div><!--div class="inputBit"-->
           <div id="printSockQuote"></div>
         </fieldset>
       </form>

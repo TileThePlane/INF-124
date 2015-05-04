@@ -13,3 +13,11 @@ fieldset{
 	font-weight: bold;
   color:#64EDCD;
 }
+
+#imageHolder{
+  float:left;
+}
+
+#sockQuote{
+  float:left;
+}
