@@ -1,3 +1,5 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
+  "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd">
 <!-- buy.html -->
 <html>
 
@@ -10,29 +12,23 @@
 
 <body>
   <div id="container" style="padding-bottom:350">
-    <div id="topbar">
-      <div id="logo">
-        <img src="images/SockExchangePro.png" alt="Sock Exchange Logo" height=70 width=300 />
-      </div>
-      <div id="navBar">
-        <div class="wrapper" style="clear: both; padding-top: 17px;">
-          <!--change class for each <a> to nested element-->
-          <a class="edge" href="index.html">Home</a><a href="buy.html">Buy</a><a href="sell.html">Sell</a><a href="trade.html">Trade</a><a href="about.html">About</a>
-        </div>
-      </div>
-    </div>
-    <div class="content">
+    <!--#include virtual="common/navBar.html"-->
+    <div class="content"  onLoad='getRotatingSockImages()'>
+      <div id="imageHolder">
+        <img id="placeHolder" src"" alt="Sock Offerings"
+          width="500px" height="600px" />
+      </div><!--div id="imageHolder"-->
       <form id="sockQuote">
         <fieldset>
           <legend>Sock Quoter</legend>
           <div class="inputBit">
           <label for="sockQuantity">How many socks do you need to purchase(in tonnes)</label>
           <input type="number" id="sockQuantity" name="sockQuantity" min="1" max="999" />
-          </div>
+        </div><!--div class="inputBit"-->
           <div class="inputBit">
           <label for="sockColor">What color must these socks be</label>
           <input type="color" id="sockColor"name='sockColor' />
-          </div>
+        </div><!--div class="inputBit"-->
           <div class="inputBit">
           <label for="sockPattern">Please select from one of our sock patterns</label>
           <select name='sockPattern' id="sockPattern" onChange="" />
@@ -41,21 +37,19 @@
             <option value="striped">Striped</option>
             <option value="solid">Solid</option>
             <option value="alpaca">Alpaca Print</option>
-          </select>
-          </div>
+            <option value="obama">Obama Print</option>
+            <option value='badass'>Bad Ass Print</option>
+          </select><!--form id="sockQuote"-->
+        </div><!--div class="inputBit"-->
           <div class="inputBit">
           <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
-          </div>
+        </div><!--div class="inputBit"-->"
           <div id="printSockQuote"></div>
         </fieldset>
       </form>
-    </div>
-  </div>
-  <div id="footer">
-    <div class="wrapFooter">
-      <p>2015 Sock Exchange Inc.</p>
-    </div>
-  </div>
+    </div><!--div id="content"-->
+  </div><!--div id="container"-->
+  <!--#include virtual="common/footer.html"-->
 </body>
 
 </html>

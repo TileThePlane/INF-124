@@ -1,4 +1,10 @@
--Restructure Website to use Server Side Includes
--Meet Milestone 2:
-	2 Javascript Forms
-	
+Kyle todo
+(client side javascript)rotating image feature
+(validation)buying form
+(unique javascript)
+
+
+Andrew todos
+(client side)drop down menu
+(validaiton)feedback
+(unique javascript)
