@@ -1,4 +1,4 @@
-dir = 'image/rotate'
+dir = 'image/rotate/'
 var imageArray = new Array(7);
 for (i=0; i<imageArray.length; i++)
   imageArray[i] = dir + (i+1) + '.jpg';
