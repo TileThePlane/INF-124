@@ -3,16 +3,18 @@ form  {
 	width: 500px;
 }
 p.tablerow{ 
-	display: table-row;  
+	display: table-row;
 }
 label { 
 	display: table-cell;
 	text-align: right;
 	width:30%;
+	vertical-align: top;
 }
 input { 
 	display: table-cell;
 	width: 100%;
+	left: 0px;
 }
 
 textarea {
