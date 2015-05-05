@@ -14,9 +14,12 @@ label {
 input { 
 	display: table-cell;
 	width: 100%;
-	left: 0px;
 }
 
+.cb{
+	display: table-cell;
+	width: 20px;
+}
 textarea {
 	display: table-cell;
 	width: 100%;
