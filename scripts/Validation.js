@@ -2,7 +2,7 @@
 //with your script to make it easier to validate.
 
 
-//regex source http://www.regular-expressions.info/email.html
+//regex Email source http://www.regular-expressions.info/email.html
 function ValidEmail(Email){
 	return new RegExp("\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b","i").test(Email);
 };
@@ -12,3 +12,14 @@ console.log(ValidEmail('u0uhetuehu'));
 console.log(ValidEmail(''));
 console.log(ValidEmail('12432'));
 console.log("done");*/
+
+function ValidName(Name){
+	return new RegExp("(\\b\\w+\\b)+","i").test(Name);
+}
+
+//console.log(ValidName(''));
+console.log(ValidName(''));
+console.log(ValidName('abcd abcd'));
+console.log(ValidName('] aoeu')); //acceptable? maybe
+console.log(ValidName(' '));
+console.log(ValidName('aoeueaoueu'));
