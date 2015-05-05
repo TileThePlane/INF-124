@@ -1,7 +1,7 @@
 Kyle todo
-(client side javascript)rotating image feature
-(validation)buying form
-(unique javascript)
+(client side javascript)rotating image feature(Done)
+(validation)order form
+(unique javascript) sockQuoter.js (Done)
 
 
 Andrew todos
