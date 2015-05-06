@@ -12,5 +12,5 @@ function checkform(){
 		document.getElementById("Error").innerHTML += "Phone Number is not valid. <br>";
 		}
 	if(!ValidEmail(email))
-		document.getElementById("Error").innerHTML += "Email Number is not valid.";
+		document.getElementById("Error").innerHTML += "Email is not valid.";
 };

@@ -6,5 +6,5 @@ Kyle todo
 
 Andrew todos
 (client side)drop down menu
-(validaiton)feedback
+(validaiton)feedback (done)
 (unique javascript)
