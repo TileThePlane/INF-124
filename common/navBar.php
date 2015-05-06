@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
   "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd"><!-- navBar.php -->
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-<link rel="stylesheet" type="text/css" href="../css/menustyle.css" />
+<link rel="stylesheet" type="text/css" href="css/menustyle.css" />
 <div id="topbar">
   <div id="logo">
     <img src="../images/SockExchangePro_small.png" alt="Sock Exchange Logo" height=52 width=273 />
@@ -20,7 +19,7 @@
 	  <li><a href="trade.php">Trade</a></li>
 	  <li><a href="about.php" onmouseover="show('m2')">About</a>
 	  <div id="m2" onmouseover="show('m2')">
-		<a href="#">Feedback</a>
+		<a href="feedbackform.php">Feedback</a>
 	  </div>
 	  </li>
 	  </ul>
