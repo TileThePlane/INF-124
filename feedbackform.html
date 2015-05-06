@@ -41,14 +41,17 @@
 			<input type="checkbox" name="mail list" value="yes" class="cb">
         <p class="tablerow">
           <span class="buttoncell">
-            <button type="button" onclick="alert('Successfully submitted your feedback!')">Submit Form</button>
+            <button type="button" onclick="checkform()">Submit Form</button>
             <button type="reset">Reset</button>
           </span><!--span class="buttoncell"-->
         </p><!--p class="tablerow"-->
       </form>
+	  <p id="Error" color="red"></p>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
   <!--#include virtual="common/footer.html"-->
+  <script src="scripts\Validation.js"></script>
+  <script src="scripts\feedbackForm.js"></script>
 </body>
 
 </html>

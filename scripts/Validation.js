@@ -27,8 +27,8 @@ console.log(ValidName('aoeueaoueu'));
 
 
 function ValidPhone(Phonenum){
-	Number = Phonenum.replace(/\D/g,'');
-	return Number.length==7 || Number.length==10;
+	Num = Phonenum.replace(/\D/g,'');
+	return Num.length==7 || Num.length==10;
 };
 
 console.log("Testing ValidPhone");
