@@ -49,7 +49,7 @@
 #logo{
 	background-color: yellow;
 	float:left;
-	width:28.5%;
+	width:273px;
 }
 
 .content{
@@ -58,7 +58,7 @@
 }
 
 body{
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 

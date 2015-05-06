@@ -4,24 +4,27 @@
 <link rel="stylesheet" type="text/css" href="../css/menustyle.css" />
 <div id="topbar">
   <div id="logo">
-    <img src="../images/SockExchangePro_small.png" alt="Sock Exchange Logo" height=70 width=365 />
+    <img src="../images/SockExchangePro_small.png" alt="Sock Exchange Logo" height=52 width=273 />
   </div>
   <div id="navBar">
     <div class="wrapper" style="clear: both; padding-top: 17px;">
       <!--change class for each <a> to nested element-->
+	  <ul class = "Links">
       <li><a href="index.html">Home</a></li>
-	  <li><a href="buy.html">Buy</a>
+	  <li><a href="buy.html" onmouseover="show('m1')">Buy</a>
 	  <div id="m1" onmouseover="show('m1')">
 		<a href="#">Sock Quote</a>
 	  </div>
 	  </li>
 	  <li><a href="sell.html">Sell</a></li>
 	  <li><a href="trade.html">Trade</a></li>
-	  <li><a href="about.html">About</a>
+	  <li><a href="about.html" onmouseover="show('m2')">About</a>
 	  <div id="m2" onmouseover="show('m2')">
 		<a href="#">Feedback</a>
 	  </div>
 	  </li>
+	  </ul>
     </div>
   </div>
 </div>
+<script src="../scripts/menu.js""></script>
