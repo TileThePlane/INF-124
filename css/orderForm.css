@@ -3,3 +3,11 @@
   width: 350px;
   height: 400px;
 }
+
+.sockGroup input{
+  width: 3em;
+}
+
+#orderForm{
+  clear: left;
+}
