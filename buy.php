@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
   "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd">
-<!-- buy.html -->
+<!-- buy.php -->
 <html>
 
 <head>
@@ -14,7 +14,7 @@
 
 <body onLoad='getRotatingSockImages()'>
   <div class="container" style="padding-bottom:350">
-    <!--#include virtual="common/navBar.html"-->
+    <!--#include virtual="common/navBar.php"-->
     <div class="content">
       <div id="imageHolder">
         <img id="placeHolder" src"" alt="Sock Offerings"
@@ -51,7 +51,7 @@
       </form>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
-  <!--#include virtual="common/footer.html"-->
+  <!--#include virtual="common/footer.php"-->
 </body>
 
 </html>

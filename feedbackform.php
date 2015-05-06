@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
   "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd">
-<!-- index.html -->
+<!-- index.php -->
 <html>
 
 <head>
@@ -11,7 +11,7 @@
 
 <body>
   <div id="container">
-    <!--#include virtual="common/navBar.html"-->
+    <!--#include virtual="common/navBar.php"-->
     <div class="content">
       <h1>Feedback Form </h1>
       <p>In order to give you the best possible service, we ask that you give us feedback on your order:</p>
@@ -49,7 +49,7 @@
 	  <p id="Error"></p>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
-  <!--#include virtual="common/footer.html"-->
+  <!--#include virtual="common/footer.php"-->
   <script src="scripts\Validation.js"></script>
   <script src="scripts\feedbackForm.js"></script>
 </body>

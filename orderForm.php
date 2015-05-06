@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
   "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd">
-<!-- index.html -->
+<!-- index.php -->
 <html>
 
 <head>
@@ -11,7 +11,7 @@
 
 <body>
   <div id="container">
-    <!--#include virtual="common/navBar.html"-->
+    <!--#include virtual="common/navBar.php"-->
     <div class="content">
       <h1>Choose pairs of Socks from our sock offerings</h1></br></br>
       <div class="sockGroup">
@@ -113,7 +113,7 @@
       </form><!--form id='orderForm'-->
     </div><!--div id="content"-->
   </div><!--div id="container"-->
-  <!--#include virtual="common/footer.html"-->
+  <!--#include virtual="common/footer.php"-->
 </body>
 
 </html>

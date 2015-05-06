@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
-  "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd"><!-- navBar.html -->
+  "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd"><!-- navBar.php -->
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/menustyle.css" />
 <div id="topbar">
