@@ -15,7 +15,7 @@
     <div class="content">
       <h1>Feedback Form </h1>
       <p>In order to give you the best possible service, we ask that you give us feedback on your order:</p>
-      <form>
+      <form id="feedbackForm" onsubmit="return checkform()" action="php/processFeedback.php" method="post">
         <p class="tablerow">
           <label>Name:</label>
           <input id="name" name="wholename" type="text">
@@ -41,7 +41,7 @@
 			<input type="checkbox" name="mail list" value="yes" class="cb">
         <p class="tablerow">
           <span class="buttoncell">
-            <button type="button" onsubmit="return checkform()" action="php/processFeedback.php">Submit Form</button>
+            <input type="submit" value= "Submit">
             <button type="reset">Reset</button>
           </span><!--span class="buttoncell"-->
         </p><!--p class="tablerow"-->
