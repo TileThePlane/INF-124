@@ -11,7 +11,7 @@
 
 <body>
   <div id="container">
-    <!--#include virtual="common/navBar.php"-->
+    <!--#include virtual="common/navBar.html"-->
     <div class="content">
       <h1>Feedback Form </h1>
       <p>In order to give you the best possible service, we ask that you give us feedback on your order:</p>
@@ -20,20 +20,38 @@
           <label>Name:</label>
           <input id="name" type="text">
         </p><!--p class="tablerow">-->
+		<p class="tablerow">
+			<label>Email Address:</label>
+			<input id="Email Address" type="text">
+		</p>
+		<p class="tablerow">
+			<label>Phone Number:</label>
+			<input id="Phone Number" type = "text">
+		</p>
+		<p class = "tablerow">
+			<label>Subject:</label>
+			<input id="Subject" type = "text">
+		</p>
         <p class="tablerow">
           <label>Comments?</label>
           <textarea id="Comments" rows="10" cols="30"></textarea>
         </p><!--p class="tablerow"-->
+		<p class="tablerow">
+			<label>Join our mailing list?</label>
+			<input type="checkbox" name="mail list" value="yes" class="cb">
         <p class="tablerow">
           <span class="buttoncell">
-            <button type="button" onclick="alert('Successfully submitted your feedback!')">Submit Form</button>
+            <button type="button" onclick="checkform()">Submit Form</button>
             <button type="reset">Reset</button>
           </span><!--span class="buttoncell"-->
         </p><!--p class="tablerow"-->
       </form>
+	  <p id="Error"></p>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
-  <!--#include virtual="common/footer.php"-->
+  <!--#include virtual="common/footer.html"-->
+  <script src="scripts\Validation.js"></script>
+  <script src="scripts\feedbackForm.js"></script>
 </body>
 
 </html>

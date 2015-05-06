@@ -7,9 +7,16 @@ fieldset{
   padding-bottom:25px;
 }
 
-.printSockQuote{
-  padding-top:50px;
+#printSockQuote{
+  padding-top:25px;
   font-size: 30px;
 	font-weight: bold;
-  color:#64EDCD;
+}
+
+#imageHolder{
+  float:left;
+}
+
+#sockQuote{
+  float:left;
 }

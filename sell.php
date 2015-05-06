@@ -10,13 +10,13 @@
 
 <body>
   <div id="container">
-    <!--#include virtual="common/navBar.php"-->
+    <!--#include virtual="common/navBar.html"-->
     <div class="content">
       <h1>A Place for the sock enthusiast to sell socks </h1>
       <p> This is a paragraph. </p>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
-  <!--#include virtual="common/footer.php"-->
+  <!--#include virtual="common/footer.html"-->
 </body>
 
 </html>

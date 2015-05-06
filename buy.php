@@ -8,42 +8,50 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/buy.css" />
   <script type="text/javascript" src="scripts/sockQuote.js"></script>
+  <script type="text/javascript" src="scripts/rotatingSockImages.js"></script>
+  <script type="text/javascript" src="scripts/Validation.js"></script>
 </head>
 
-<body>
-  <div id="container" style="padding-bottom:350">
-    <!--#include virtual="common/navBar.php"-->
+<body onLoad='getRotatingSockImages()'>
+  <div class="container" style="padding-bottom:350">
+    <!--#include virtual="common/navBar.html"-->
     <div class="content">
+      <div id="imageHolder">
+        <img id="placeHolder" src"" alt="Sock Offerings"
+          width="500px" height="600px" />
+      </div><!--div id="imageHolder"-->
       <form id="sockQuote">
         <fieldset>
           <legend>Sock Quoter</legend>
           <div class="inputBit">
-          <label for="sockQuantity">How many socks do you need to purchase(in tonnes)</label>
-          <input type="number" id="sockQuantity" name="sockQuantity" min="1" max="999" />
-        </div><!--div class="inputBit"-->
+            <label for="sockQuantity">How many socks do you need to purchase(in tonnes)</label>
+            <input type="number" id="sockQuantity" name="sockQuantity" min="1" max="999" />
+          </div><!--div class="inputBit"-->
           <div class="inputBit">
-          <label for="sockColor">What color must these socks be</label>
-          <input type="color" id="sockColor"name='sockColor' />
-        </div><!--div class="inputBit"-->
+            <label for="sockColor">What color must these socks be</label>
+            <input type="color" id="sockColor"name='sockColor' />
+          </div><!--div class="inputBit"-->
           <div class="inputBit">
-          <label for="sockPattern">Please select from one of our sock patterns</label>
-          <select name='sockPattern' id="sockPattern" onChange="" />
-            <option value="argyle">Argyle</option>
-            <option value="checkered">Checkered</option>
-            <option value="striped">Striped</option>
-            <option value="solid">Solid</option>
-            <option value="alpaca">Alpaca Print</option>
-          </select><!--form id="sockQuote"-->
-        </div><!--div class="inputBit"-->
+            <label for="sockPattern">Please select from one of our sock patterns</label>
+            <select name='sockPattern' id="sockPattern"/>
+              <option value="argyle">Argyle</option>
+              <option value="checkered">Checkered</option>
+              <option value="striped">Striped</option>
+              <option value="solid">Solid</option>
+              <option value="alpaca">Alpaca Print</option>
+              <option value="obama">Obama Print</option>
+              <option value='badass'>Bad Ass Print</option>
+            </select><!--form id="sockQuote"-->
+          </div><!--div class="inputBit"-->
           <div class="inputBit">
-          <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
-        </div><!--div class="inputBit"-->"
+            <input type="button" value="Get Sock Quote" onclick="printQuote()"/>
+          </div><!--div class="inputBit"-->
           <div id="printSockQuote"></div>
         </fieldset>
       </form>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
-  <!--#include virtual="common/footer.php"-->
+  <!--#include virtual="common/footer.html"-->
 </body>
 
 </html>

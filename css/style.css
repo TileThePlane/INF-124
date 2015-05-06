@@ -19,46 +19,13 @@
 	float:left;
 }
 
-#topbar{
-	background-color: #CCFFFF;
-	height:100px;
-}
-
-#navBar{
-	background-color: green;
-	float:left;
-	width:71.5%;
-	height:70px;
-	text-align:center;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-}
-#navBar a{
-	padding-left:42px;
-	padding-right:42px;
-	border-left: thin solid #000000;
-	text-decoration: none !important;
-	color: #000000;
-}
-#navBar .edge{
-	border:none;
-	padding-left:35px;
-}
-
-#logo{
-	background-color: yellow;
-	float:left;
-	width:28.5%;
-}
-
 .content{
   clear:both;
-	padding-left: 50px;
+	padding: 50px;
 }
 
 body{
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 

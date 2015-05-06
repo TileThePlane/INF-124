@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//En"
   "http://www.w3.org/TR/xhtml/DTD/xhtml-strict.dtd">
-<!-- index.html -->
+<!-- index.php -->
 <html>
 
 <head>

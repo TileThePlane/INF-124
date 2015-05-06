@@ -25,8 +25,12 @@ function printQuote(){
       quote += 1;
       break;
     case 'alpaca':
-      quote += 20;
+      quote += 100;
       break;
+    case 'obama':
+      quote += 1000;
+    case 'badass':
+      quote += 10000;
   }
 
   quote = quote*sockQuantity;
