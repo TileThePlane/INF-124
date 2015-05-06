@@ -18,8 +18,21 @@ function ValidName(Name){
 }
 
 //console.log(ValidName(''));
+console.log("Testing ValidName");
 console.log(ValidName(''));
 console.log(ValidName('abcd abcd'));
 console.log(ValidName('] aoeu')); //acceptable? maybe
 console.log(ValidName(' '));
 console.log(ValidName('aoeueaoueu'));
+
+
+function ValidPhone(Phonenum){
+	Number = Phonenum.replace(/\D/g,'');
+	return Number.length==7 || Number.length==10;
+};
+
+console.log("Testing ValidPhone");
+console.log(ValidPhone("123-4567"));
+console.log(ValidPhone("(951) 123-4556"));
+console.log(ValidPhone(""));
+console.log(ValidPhone("aotehusue"));
