@@ -1,3 +1,38 @@
+#topbar{
+	background-color: #CCFFFF;
+	height:60px;
+}
+
+#navBar{
+	/*background-color: green;*/
+	float:left;
+	width:500px;
+	height:60px;
+	text-align:center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+#navBar a{
+	padding-left:22px;
+	padding-right:22px;
+	border-left: thin solid #000000;
+	text-decoration: none !important;
+	color: #000000;
+}
+#navBar .edge{
+	border:none;
+	padding-left:22px;
+}
+
+#logo{
+	/*background-color: yellow;*/
+	float:left;
+	height:100%;
+	width:273px;
+}
+
+
 .Links {
 	padding: 0;
 	margin: 0;
@@ -8,7 +43,7 @@
 	margin: 00;
 	float: left;
 	list-style: none;
-	font: bold .7em Verdana;
+	/*font: bold .7em Verdana;*/
 }
 
 .Links li a{
@@ -17,7 +52,7 @@
 	width:50px;
 	padding: 4px 10px;
 	margin: 0 1px 0 0;;
-	background-color: #048018;
+	/*background-color: #FFCCCC;*/
 	color: #FFF;
 	text-align: center;
 	text-decoration: none;
@@ -25,8 +60,8 @@
 
 .Links div {
 	position: absolute;
-	background-color: #C5DCC9;
-	border: 1px solid #048018;
+	background-color: #CCCCFF;
+	border: 1px solid #000000;
 	visibility: hidden;
 }
 
@@ -34,15 +69,15 @@
 	display: block;
 	/*width: 156;*/
 	width: 50px;
-	padding: 5px 10px;
-	background-color: #C5DCC9;
+	padding: 5px 5px;
+	background-color: #CCFFFF;
 	color: #048018;
 	text-align: left;
 	text-decoration: none;
-	font: bold 90% Verdana;
+	font: bold 50% Verdana;
 }
 
 .Links div a:hover{
-	background-color: #5FB361;
+	background-color: #FFCCCC;
 	color: #FFF;
 }
