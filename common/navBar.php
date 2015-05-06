@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="css/menustyle.css" />
 <div id="topbar">
   <div id="logo">
-    <img src="../images/SockExchangePro_small.png" alt="Sock Exchange Logo" height=52 width=273 />
+    <img src="images/SockExchangePro_small.png" alt="Sock Exchange Logo" height=52 width=273 />
   </div>
   <div id="navBar">
     <div class="wrapper" style="clear: both; padding-top: 17px;">
@@ -26,4 +26,4 @@
     </div>
   </div>
 </div>
-<script src="../scripts/menu.js""></script>
+<script src="scripts/menu.js""></script>
