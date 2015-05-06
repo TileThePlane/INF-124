@@ -18,12 +18,12 @@ function ValidName(Name){
 }
 
 //console.log(ValidName(''));
-console.log("Testing ValidName");
+/*console.log("Testing ValidName");
 console.log(ValidName(''));
 console.log(ValidName('abcd abcd'));
 console.log(ValidName('] aoeu')); //acceptable? maybe
 console.log(ValidName(' '));
-console.log(ValidName('aoeueaoueu'));
+console.log(ValidName('aoeueaoueu'));*/
 
 
 function ValidPhone(Phonenum){
@@ -31,11 +31,11 @@ function ValidPhone(Phonenum){
 	return Num.length==7 || Num.length==10;
 };
 
-console.log("Testing ValidPhone");
+/*console.log("Testing ValidPhone");
 console.log(ValidPhone("123-4567"));
 console.log(ValidPhone("(951) 123-4556"));
 console.log(ValidPhone(""));
-console.log(ValidPhone("aotehusue"));
+console.log(ValidPhone("aotehusue"));*/
 
 function ValidCreditCard(card){
 	/*Visa*/
@@ -51,8 +51,4 @@ function ValidCreditCard(card){
 	/*JCB*/
 	if(new RegExp("^(?:2131|1800|35\d{3})\d{11}$","i").test(card)){return true;}
 	return false;
-	;
 }
-
-console.log(ValidCreditCard("4097345623455678"));
-console.log(ValidCreditCard("409734562345567"));

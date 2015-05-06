@@ -7,6 +7,8 @@
   <title>Sock Exchange</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/orderForm.css" />
+  <script type="text/javascript" src="scripts/Validation.js"></script>
+  <script type="text/javascript" src="scripts/orderForm.js"></script>
 </head>
 
 <body>
@@ -16,38 +18,42 @@
       <h1>Choose pairs of Socks from our sock offerings</h1></br></br>
       <div class="sockGroup">
         <img src='images/rotate/4.jpg' alt="Argyle Sock" height=300 width=265 />
-        <input type="number" id="argyle" name="argyle" max="999"s value="0" size="3"/>
+        <input type="number" id="argyle" name="Argyle Sock Pair" max="999"s value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <div class="sockGroup">
         <img src='images/rotate/3.jpg' alt="Checkered Sock" height=300 width=265 />
-        <input type="number" id="checkered" name="checkered" max="999" value="0" size="3"/>
+        <input type="number" id="checkered" name="Checkered Sock Pair" max="999" value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <div class="sockGroup">
         <img src='images/rotate/2.jpg' alt="Striped Sock" height=300 width=265 />
-        <input type="number" id="striped" name="striped" max="999" value="0" size="3"/>
+        <input type="number" id="striped" name="Striped Sock Pair" max="999" value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <div class="sockGroup">
         <img src='images/rotate/5.jpg' alt="Alpaca Sock" height=300 width=265 />
-        <input type="number" id="alpaca" name="alpaca" max="999" value="0" size="3"/>
+        <input type="number" id="alpaca" name="Alpaca Sock Pair" max="999" value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <div class="sockGroup">
         <img src='images/rotate/1.jpg' alt="Solid Sock" height=300 width=265 />
-        <input type="number" id="solid" name="solid" max="999" value="0" size="3"/>
+        <input type="number" id="solid" name="Solid Sock Pair" max="999" value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <div class="sockGroup">
         <img src='images/rotate/6.jpg' alt="Obama Sock" height=300 width=265 />
-        <input type="number" id="obama" name="obama" max="999" value="0" size="3"/>
+        <input type="number" id="obama" name="Obama Sock Pair" max="999" value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <div class="sockGroup">
         <img src='images/rotate/7.jpg' alt="Bad Ass Sock" height=300 width=265 />
-        <input type="number" id="badAss" name="badAss" max="999" value="0" size="3"/>
+        <input type="number" id="badAss" name="BadAss Sock Pair" max="999" value="0" size="3"/>
       </div><!--div class="sockGroup"-->
       <form id='orderForm'>
         <h1>Place an Order</h1>
         <fieldset>
           <legend>Shipping Information</legend>
             <label for="email">Email: </label>
-            <input id="email" type="text" name="email"/></br>
+            <input id="email" type="text" name="email"/>
+            <label for"name">Name: </label>
+            <input id="name" type="text" name="Name"/>
+            <label for="phone">Phone Number: </label>
+            <input id="phone" type="text" name="phone"/></br>
             <label for="address">Address: </label>
             <input id="address" type="text" name="address" size='30'/></br>
             <label for="state">State: </label>
@@ -110,7 +116,10 @@
               <label for="creditCardNum">Credit Card Number: </label>
               <input id="creditCardNum" type="text" name="creditCardNum"/>
           </fieldset><!--<legend>Payment Information</legend>-->
+          <input type="button" value="Place Sock Order" onclick="checkform()"/>
       </form><!--form id='orderForm'-->
+      <div id="error"></div>
+      <div id="total"></div>
     </div><!--div id="content"-->
   </div><!--div id="container"-->
   <!--#include virtual="common/footer.html"-->

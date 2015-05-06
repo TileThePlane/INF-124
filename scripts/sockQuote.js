@@ -29,11 +29,13 @@ function printQuote(){
       break;
     case 'obama':
       quote += 1000;
+      break;
     case 'badass':
       quote += 10000;
+      break;
   }
 
   quote = quote*sockQuantity;
 
   document.getElementById("printSockQuote").innerHTML = "Our estimate is: " + quote;
-}
+};
