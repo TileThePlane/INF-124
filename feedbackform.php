@@ -18,30 +18,30 @@
       <form>
         <p class="tablerow">
           <label>Name:</label>
-          <input id="name" type="text">
+          <input id="name" name="wholename" type="text">
         </p><!--p class="tablerow">-->
 		<p class="tablerow">
 			<label>Email Address:</label>
-			<input id="Email Address" type="text">
+			<input id="Email Address" name="email" type="text">
 		</p>
 		<p class="tablerow">
 			<label>Phone Number:</label>
-			<input id="Phone Number" type = "text">
+			<input id="Phone Number" name="phone" type = "text">
 		</p>
 		<p class = "tablerow">
 			<label>Subject:</label>
-			<input id="Subject" type = "text">
+			<input id="Subject" name="subject" type = "text">
 		</p>
         <p class="tablerow">
           <label>Comments?</label>
-          <textarea id="Comments" rows="10" cols="30"></textarea>
+          <textarea id="Comments" rows="10" cols="30" name="message"></textarea>
         </p><!--p class="tablerow"-->
 		<p class="tablerow">
 			<label>Join our mailing list?</label>
 			<input type="checkbox" name="mail list" value="yes" class="cb">
         <p class="tablerow">
           <span class="buttoncell">
-            <button type="button" onclick="checkform()">Submit Form</button>
+            <button type="button" onsubmit="return checkform()" action="php/processFeedback.php">Submit Form</button>
             <button type="reset">Reset</button>
           </span><!--span class="buttoncell"-->
         </p><!--p class="tablerow"-->
